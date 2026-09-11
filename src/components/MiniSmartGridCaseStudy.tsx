@@ -260,3 +260,5 @@ export default function MiniSmartGridCaseStudy() {
     </section>
   );
 }
+
+// Default view: Substation Chassis & Miniature Transmission Lines
