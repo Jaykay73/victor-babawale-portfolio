@@ -155,3 +155,5 @@ export default function EngineeringFocus() {
     </section>
   );
 }
+
+// Core architectural focus: Signal Integrity, Control Logic, System Reliability
