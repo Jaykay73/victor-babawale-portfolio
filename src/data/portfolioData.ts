@@ -335,3 +335,5 @@ export const SKILLS_LIST = [
   { name: "Technical Team Leadership", category: "Leadership", level: "People", desc: "Coordinating 400+ student body members and project teams" },
   { name: "Cross-Functional Collaboration", category: "Leadership", level: "Soft Skill", desc: "Partnering with field engineers, technicians, and stakeholders" },
 ];
+
+// Verified first-person voice across all engineering sections
