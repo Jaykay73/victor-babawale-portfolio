@@ -1,10 +1,12 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Menu, X, FileDown, Terminal, Cpu } from "lucide-react";
+import { Menu, X, FileDown, Terminal, Cpu, Users } from "lucide-react";
 import { PROFILE } from "@/data/portfolioData";
+import { usePortfolioTheme } from "@/context/PortfolioThemeContext";
 
 export default function Navbar() {
+  const { setMode } = usePortfolioTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
@@ -94,13 +96,23 @@ export default function Navbar() {
 
         {/* Action Buttons */}
         <div className="hidden sm:flex items-center gap-3">
+          {/* Switch to Leadership Button */}
+          <button
+            onClick={() => setMode("leadership")}
+            className="group flex items-center gap-2 px-3 py-1.5 font-mono text-xs text-amber-400 bg-amber-500/10 border border-amber-500/30 rounded hover:bg-amber-500/20 transition-all duration-200"
+            title="Switch to Leadership & Governance Portfolio"
+          >
+            <Users className="w-3.5 h-3.5 text-amber-400 group-hover:scale-110 transition-transform" />
+            <span>Switch to Leadership</span>
+          </button>
+
           <a
             href={PROFILE.contact.cvPath}
             download="Babawale_Victor_Resume.pdf"
             className="group flex items-center gap-2 px-3.5 py-1.5 font-mono text-xs text-eng-copper bg-eng-copper-dim border border-eng-copper/40 rounded hover:bg-eng-copper hover:text-canvas transition-all duration-200"
           >
             <FileDown className="w-3.5 h-3.5 transition-transform group-hover:-translate-y-0.5" />
-            <span>RESUME [PDF]</span>
+            <span>RESUME</span>
           </a>
 
           <div className="hidden lg:flex items-center gap-1.5 font-mono text-[11px] text-slate-muted border-l border-line pl-3">
@@ -110,14 +122,22 @@ export default function Navbar() {
         </div>
 
         {/* Mobile menu toggle */}
-        <button
-          type="button"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle navigation menu"
-          className="md:hidden p-2 text-slate-secondary hover:text-slate-primary bg-canvas-secondary border border-line rounded focus:outline-none focus:ring-2 focus:ring-eng-cyan"
-        >
-          {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-        </button>
+        <div className="flex md:hidden items-center gap-2">
+          <button
+            onClick={() => setMode("leadership")}
+            className="p-1.5 rounded bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-mono"
+          >
+            🏛️ Leadership
+          </button>
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle navigation menu"
+            className="p-2 text-slate-secondary hover:text-slate-primary bg-canvas-secondary border border-line rounded focus:outline-none focus:ring-2 focus:ring-eng-cyan"
+          >
+            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu Dropdown */}
