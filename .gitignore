@@ -33,3 +33,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw phone video (115MB exceeds GitHub limits)
+20260825_000926.mp4
