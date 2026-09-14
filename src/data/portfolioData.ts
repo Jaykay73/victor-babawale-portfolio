@@ -65,9 +65,14 @@ export const PROFILE = {
     "I am an Embedded Systems Engineer focused on firmware, microcontrollers, IoT, hardware integration, and reliable real-world physical systems.",
   contact: {
     email: "victorbabawale65@gmail.com",
-    phone: "+234 808-606-2579",
+    phone: "08086062579",
+    displayPhone: "+234 808 606 2579",
     location: "Lagos / Ilorin, Nigeria",
     cvPath: "/Babawale_Victor_Resume.pdf",
+    socials: {
+      facebook: "https://www.facebook.com/share/1Qa2ukV1h1/",
+      instagram: "https://www.instagram.com/babs_victor?stkn=MTJyZnlzNjIzemo0NA==",
+    },
   },
   education: {
     institution: "University of Ilorin, Nigeria",

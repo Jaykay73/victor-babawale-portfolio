@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Copy, Check, Send, Radio, Terminal } from "lucide-react";
+import { Mail, Phone, MapPin, Copy, Check, Send, Radio, Terminal, Facebook, Instagram } from "lucide-react";
 import { PROFILE } from "@/data/portfolioData";
 
 export default function ContactSection() {
@@ -96,16 +96,26 @@ export default function ContactSection() {
                 <div className="flex items-center gap-3">
                   <Phone className="w-4 h-4 text-eng-copper" />
                   <div>
-                    <span className="text-[10px] text-slate-muted block">TELEPHONE</span>
+                    <span className="text-[10px] text-slate-muted block">DIRECT PHONE / WHATSAPP</span>
                     <span className="text-slate-primary font-bold">{PROFILE.contact.phone}</span>
                   </div>
                 </div>
-                <a
-                  href={`tel:${PROFILE.contact.phone}`}
-                  className="text-eng-copper hover:underline text-[11px]"
-                >
-                  CALL
-                </a>
+                <div className="flex items-center gap-2">
+                  <a
+                    href={`tel:${PROFILE.contact.phone}`}
+                    className="px-2.5 py-1 rounded bg-canvas-secondary border border-line text-eng-copper hover:underline text-[11px]"
+                  >
+                    CALL
+                  </a>
+                  <a
+                    href={`https://wa.me/234${PROFILE.contact.phone.replace(/^0/, "")}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-2.5 py-1 rounded bg-emerald-400/10 border border-emerald-400/30 text-emerald-400 hover:bg-emerald-400/20 text-[11px]"
+                  >
+                    WHATSAPP
+                  </a>
+                </div>
               </div>
 
               <div className="p-4 rounded bg-canvas border border-line flex items-center justify-between">
@@ -118,6 +128,45 @@ export default function ContactSection() {
                 </div>
                 <span className="text-[10px] text-slate-muted">WAT (UTC+1)</span>
               </div>
+            </div>
+
+            {/* Social Media Channels Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-xs">
+              <a
+                href={PROFILE.contact.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded bg-canvas border border-line hover:border-pink-500/50 hover:bg-canvas-elevated transition-all flex items-center justify-between group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded bg-pink-500/10 text-pink-400 group-hover:scale-110 transition-transform">
+                    <Instagram className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] text-slate-muted block">INSTAGRAM PROFILE</span>
+                    <span className="text-slate-primary font-bold group-hover:text-pink-400 transition-colors">@babs_victor</span>
+                  </div>
+                </div>
+                <span className="text-[11px] text-slate-muted group-hover:text-pink-400 transition-colors">&rarr;</span>
+              </a>
+
+              <a
+                href={PROFILE.contact.socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded bg-canvas border border-line hover:border-blue-500/50 hover:bg-canvas-elevated transition-all flex items-center justify-between group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded bg-blue-500/10 text-blue-400 group-hover:scale-110 transition-transform">
+                    <Facebook className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] text-slate-muted block">FACEBOOK PROFILE</span>
+                    <span className="text-slate-primary font-bold group-hover:text-blue-400 transition-colors">Babawale Victor</span>
+                  </div>
+                </div>
+                <span className="text-[11px] text-slate-muted group-hover:text-blue-400 transition-colors">&rarr;</span>
+              </a>
             </div>
 
             {/* Terminal Status Ticker */}

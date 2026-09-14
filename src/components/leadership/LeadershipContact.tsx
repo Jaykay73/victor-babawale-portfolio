@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Copy, Check, ArrowUpRight, Send, Users, Shield } from "lucide-react";
+import { Mail, Phone, MapPin, Copy, Check, ArrowUpRight, Send, Users, Shield, Facebook, Instagram } from "lucide-react";
 import { PROFILE } from "@/data/portfolioData";
 
 export default function LeadershipContact() {
@@ -62,15 +62,25 @@ export default function LeadershipContact() {
                 <div className="flex items-center justify-between text-xs font-mono text-slate-400">
                   <span className="flex items-center gap-2 text-amber-400">
                     <Phone className="w-4 h-4" />
-                    DIRECT PHONE / WHATSAPP
+                    PHONE / WHATSAPP
                   </span>
-                  <button
-                    onClick={() => copyToClipboard(PROFILE.contact.phone, "phone")}
-                    className="p-1.5 rounded hover:bg-white/10 text-slate-400 hover:text-amber-400 transition-colors"
-                    title="Copy Phone"
-                  >
-                    {copied === "phone" ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <a
+                      href={`https://wa.me/234${PROFILE.contact.phone.replace(/^0/, "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-2 py-0.5 rounded bg-emerald-400/10 border border-emerald-400/30 text-emerald-400 hover:bg-emerald-400/20 text-[10px]"
+                    >
+                      WHATSAPP
+                    </a>
+                    <button
+                      onClick={() => copyToClipboard(PROFILE.contact.phone, "phone")}
+                      className="p-1 rounded hover:bg-white/10 text-slate-400 hover:text-amber-400 transition-colors"
+                      title="Copy Phone"
+                    >
+                      {copied === "phone" ? <Check className="w-3.5 h-3.5 text-emerald-400" /> : <Copy className="w-3.5 h-3.5" />}
+                    </button>
+                  </div>
                 </div>
                 <a
                   href={`tel:${PROFILE.contact.phone.replace(/\s+/g, "")}`}
@@ -79,6 +89,45 @@ export default function LeadershipContact() {
                   {PROFILE.contact.phone}
                 </a>
               </div>
+            </div>
+
+            {/* Social Media Channels Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-mono text-xs">
+              <a
+                href={PROFILE.contact.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-xl bg-[#090D16] border border-white/10 hover:border-pink-500/50 hover:bg-white/5 transition-all flex items-center justify-between group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded bg-pink-500/10 text-pink-400 group-hover:scale-110 transition-transform">
+                    <Instagram className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] text-slate-400 block">INSTAGRAM PROFILE</span>
+                    <span className="text-slate-200 font-bold group-hover:text-pink-400 transition-colors">@babs_victor</span>
+                  </div>
+                </div>
+                <span className="text-[11px] text-slate-400 group-hover:text-pink-400 transition-colors">&rarr;</span>
+              </a>
+
+              <a
+                href={PROFILE.contact.socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-xl bg-[#090D16] border border-white/10 hover:border-blue-500/50 hover:bg-white/5 transition-all flex items-center justify-between group"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded bg-blue-500/10 text-blue-400 group-hover:scale-110 transition-transform">
+                    <Facebook className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] text-slate-400 block">FACEBOOK PROFILE</span>
+                    <span className="text-slate-200 font-bold group-hover:text-blue-400 transition-colors">Babawale Victor</span>
+                  </div>
+                </div>
+                <span className="text-[11px] text-slate-400 group-hover:text-blue-400 transition-colors">&rarr;</span>
+              </a>
             </div>
 
             {/* Location & Status */}

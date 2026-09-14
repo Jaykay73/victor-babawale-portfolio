@@ -2,8 +2,9 @@
 
 import React from "react";
 import Link from "next/link";
-import { Cpu, ArrowUp, Shield } from "lucide-react";
+import { Cpu, ArrowUp, Shield, Instagram, Facebook } from "lucide-react";
 import { usePortfolioTheme } from "@/context/PortfolioThemeContext";
+import { PROFILE } from "@/data/portfolioData";
 
 export default function LeadershipFooter() {
   const { setMode } = usePortfolioTheme();
@@ -30,14 +31,37 @@ export default function LeadershipFooter() {
             </div>
           </div>
 
-          {/* Portal Switcher in Footer */}
-          <div className="flex items-center gap-4">
+          {/* Social Links & Portal Switcher */}
+          <div className="flex flex-wrap items-center gap-4">
+            <a
+              href={PROFILE.contact.socials.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-pink-400 transition-colors flex items-center gap-1.5"
+              title="Instagram Profile"
+            >
+              <Instagram className="w-3.5 h-3.5" />
+              <span>@babs_victor</span>
+            </a>
+            <a
+              href={PROFILE.contact.socials.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 hover:text-blue-400 transition-colors flex items-center gap-1.5"
+              title="Facebook Profile"
+            >
+              <Facebook className="w-3.5 h-3.5" />
+              <span>Facebook</span>
+            </a>
+
+            <span className="text-white/20 hidden sm:inline">|</span>
+
             <button
               onClick={() => setMode("embedded")}
               className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-eng-cyan/10 border border-eng-cyan/30 text-eng-cyan hover:bg-eng-cyan/20 transition-all font-semibold"
             >
               <Cpu className="w-3.5 h-3.5" />
-              <span>Switch to Embedded Systems Engineer Site</span>
+              <span>Switch to Embedded Systems</span>
             </button>
 
             <button

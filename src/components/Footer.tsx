@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowUp, Terminal, Cpu } from "lucide-react";
+import { ArrowUp, Terminal, Cpu, Facebook, Instagram } from "lucide-react";
 import { PROFILE } from "@/data/portfolioData";
 
 export default function Footer() {
@@ -23,7 +23,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex flex-wrap items-center gap-6 text-slate-secondary">
+          <div className="flex flex-wrap items-center gap-5 text-slate-secondary">
             <a href="#projects" className="hover:text-eng-cyan transition-colors">
               WORK
             </a>
@@ -41,6 +41,27 @@ export default function Footer() {
             </a>
             <a href="#contact" className="hover:text-eng-cyan transition-colors">
               CONTACT
+            </a>
+            <span className="text-line">|</span>
+            <a
+              href={PROFILE.contact.socials.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-muted hover:text-pink-400 transition-colors flex items-center gap-1"
+              title="Instagram Profile"
+            >
+              <Instagram className="w-3.5 h-3.5" />
+              <span>INSTAGRAM</span>
+            </a>
+            <a
+              href={PROFILE.contact.socials.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-muted hover:text-blue-400 transition-colors flex items-center gap-1"
+              title="Facebook Profile"
+            >
+              <Facebook className="w-3.5 h-3.5" />
+              <span>FACEBOOK</span>
             </a>
           </div>
 
