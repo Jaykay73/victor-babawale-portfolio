@@ -19,7 +19,7 @@ export default function Navbar() {
         setIsScrolled(false);
       }
 
-      const sections = ["hero", "focus", "projects", "experience", "skills", "about", "leadership", "contact"];
+      const sections = ["hero", "focus", "projects", "experience", "skills", "about", "contact"];
       const scrollPosition = window.scrollY + 180;
 
       for (const section of sections) {
@@ -44,7 +44,6 @@ export default function Navbar() {
     { label: "EXPERIENCE", href: "#experience", section: "experience" },
     { label: "SKILLS", href: "#skills", section: "skills" },
     { label: "ABOUT", href: "#about", section: "about" },
-    { label: "LEADERSHIP", href: "#leadership", section: "leadership" },
     { label: "CONTACT", href: "#contact", section: "contact" },
   ];
 

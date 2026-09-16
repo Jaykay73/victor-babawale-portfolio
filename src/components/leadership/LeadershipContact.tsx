@@ -27,7 +27,7 @@ export default function LeadershipContact() {
               LET&apos;S CONNECT
             </h2>
             <p className="text-slate-400 text-sm sm:text-base font-sans max-w-xl mx-auto">
-              Available for organizational leadership, student governance advisory, speaking engagements, and engineering project coordination.
+              Available for organizational leadership, student governance advisory, speaking engagements, and youth development initiatives.
             </p>
           </div>
 

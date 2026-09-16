@@ -337,8 +337,9 @@ export const SKILLS_LIST = [
   { name: "Inverter Telemetry Analysis", category: "Power", level: "Energy", desc: "Benchmarking solar inverter efficiency and energy capture" },
   { name: "LAN / WAN Management", category: "Networking", level: "Network", desc: "Configuring and maintaining enterprise computer networks" },
   { name: "Cat6 & Fiber Optic Cabling", category: "Networking", level: "Physical", desc: "Cable installation, testing, and telecom port mapping" },
-  { name: "Technical Team Leadership", category: "Leadership", level: "People", desc: "Coordinating 400+ student body members and project teams" },
-  { name: "Cross-Functional Collaboration", category: "Leadership", level: "Soft Skill", desc: "Partnering with field engineers, technicians, and stakeholders" },
+  { name: "Hardware-Firmware Integration", category: "Hardware", level: "Systems", desc: "Interfacing microcontrollers to physical sensors, actuators, and power stages" },
+  { name: "Oscilloscope & Logic Analyzers", category: "Verification", level: "Instruments", desc: "Probing digital communication buses (I2C/SPI/UART) and analyzing waveforms" },
+  { name: "Bare-Metal State Machines", category: "Firmware", level: "Architecture", desc: "Deterministic embedded firmware architectures without race conditions" },
 ];
 
 // Verified first-person voice across all engineering sections

@@ -40,14 +40,13 @@ export default function LeadershipManifesto() {
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-100 font-sans leading-tight">
-              WHY TECHNICAL RIGOR MAKES ME A STRONGER EXECUTIVE LEADER
+              THE CREED OF PURPOSE-DRIVEN EXECUTIVE STEWARDSHIP
             </h2>
 
             {/* Featured Quote Callout */}
             <div className="p-6 rounded-xl bg-gradient-to-r from-amber-500/10 via-[#0F1626] to-[#0A0F1D] border-l-4 border-amber-500 border-y border-r border-amber-500/20 shadow-lg">
               <p className="text-base sm:text-lg text-slate-100 font-sans italic leading-relaxed">
-                &ldquo;Engineering taught me that you cannot negotiate with reality—if the physics is wrong, the circuit burns. 
-                Leadership taught me that you cannot dictate to human beings—if empathy and active listening are absent, the community fractures.&rdquo;
+                &ldquo;True leadership is not the exercise of authority; it is the discipline of creating clarity where there is uncertainty, uniting people behind a shared mission, and ensuring every member feels heard, valued, and empowered to excel.&rdquo;
               </p>
               <div className="mt-3 text-xs font-mono text-amber-400 font-semibold">
                 — Babawale Victor Ayomide

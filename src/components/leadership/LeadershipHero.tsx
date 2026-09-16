@@ -39,7 +39,7 @@ export default function LeadershipHero() {
             </p>
 
             <p className="text-sm sm:text-base text-slate-400 leading-relaxed max-w-2xl font-sans">
-              I bridge analytical discipline with high-empathy leadership—governing active communities of over <strong className="text-slate-200 font-semibold">400+ members</strong>, managing complex multi-committee operations, mentoring emerging leaders, and instilling organizational accountability.
+              I lead with purposeful vision and high empathy—governing active communities of over <strong className="text-slate-200 font-semibold">400+ members</strong>, managing complex multi-committee operations, mentoring emerging leaders, and instilling organizational accountability.
             </p>
 
             {/* Key Value Badges */}

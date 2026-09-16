@@ -9,7 +9,6 @@ import PasswordLockCaseStudy from "@/components/PasswordLockCaseStudy";
 import ExperienceProgression from "@/components/ExperienceProgression";
 import SkillsSection from "@/components/SkillsSection";
 import AboutSection from "@/components/AboutSection";
-import LeadershipSection from "@/components/LeadershipSection";
 import EditorialMoment from "@/components/EditorialMoment";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -36,7 +35,6 @@ function PortfolioView() {
             <ExperienceProgression />
             <SkillsSection />
             <AboutSection />
-            <LeadershipSection />
             <EditorialMoment />
             <ContactSection />
           </main>

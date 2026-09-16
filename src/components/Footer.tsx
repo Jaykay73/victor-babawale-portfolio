@@ -36,9 +36,6 @@ export default function Footer() {
             <a href="#about" className="hover:text-eng-cyan transition-colors">
               ABOUT
             </a>
-            <a href="#leadership" className="hover:text-eng-cyan transition-colors">
-              LEADERSHIP
-            </a>
             <a href="#contact" className="hover:text-eng-cyan transition-colors">
               CONTACT
             </a>

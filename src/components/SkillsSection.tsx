@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, { useState } from "react";
 import { Wrench, Cpu, Zap, Network, ShieldCheck, Users, Activity } from "lucide-react";
@@ -30,8 +30,6 @@ export default function SkillsSection() {
       case "analytics":
       case "engineering":
         return "text-emerald-400 border-emerald-400/30 bg-emerald-400/10";
-      case "leadership":
-        return "text-violet-400 border-violet-400/30 bg-violet-400/10";
       default:
         return "text-slate-secondary border-line bg-canvas-secondary";
     }
@@ -49,9 +47,8 @@ export default function SkillsSection() {
         return <Network className="w-3.5 h-3.5 text-sky-400" />;
       case "verification":
       case "analytics":
+      case "engineering":
         return <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />;
-      case "leadership":
-        return <Users className="w-3.5 h-3.5 text-violet-400" />;
       default:
         return <Activity className="w-3.5 h-3.5 text-slate-muted" />;
     }
@@ -63,7 +60,7 @@ export default function SkillsSection() {
     { label: "HARDWARE & CIRCUITS", value: "Hardware" },
     { label: "POWER & SOLAR", value: "Power" },
     { label: "NETWORKING", value: "Networking" },
-    { label: "TESTING & LEADERSHIP", value: "Leadership" },
+    { label: "TESTING & VERIFICATION", value: "Verification" },
   ];
 
   const filteredSkills =
@@ -72,8 +69,8 @@ export default function SkillsSection() {
       : SKILLS_LIST.filter(
           (s) =>
             s.category.toLowerCase() === selectedCategory.toLowerCase() ||
-            (selectedCategory === "Leadership" &&
-              (s.category === "Leadership" || s.category === "Verification" || s.category === "Analytics"))
+            (selectedCategory === "Verification" &&
+              (s.category === "Verification" || s.category === "Analytics" || s.category === "Engineering"))
         );
 
   return (
