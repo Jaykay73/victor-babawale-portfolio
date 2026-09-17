@@ -132,7 +132,7 @@ export default function LeadershipSection() {
                   <div className="p-5 space-y-2">
                     <div className="flex items-center justify-between text-[10px] font-mono text-eng-copper">
                       <span>{award.category}</span>
-                      <span>CACSA UNILORIN</span>
+                      <span>Student Fellowship UNILORIN</span>
                     </div>
                     <h4 className="text-base font-bold text-slate-primary font-sans">
                       {award.title}

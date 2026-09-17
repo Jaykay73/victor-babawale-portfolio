@@ -215,7 +215,7 @@ export default function LoadingScreen() {
                   </p>
 
                   <div className="flex flex-wrap gap-1.5 pt-2 font-mono text-[10px] text-slate-300">
-                    <span className="px-2 py-0.5 rounded bg-[#090D16] border border-amber-500/20 text-slate-300">Vice President CACSA</span>
+                    <span className="px-2 py-0.5 rounded bg-[#090D16] border border-amber-500/20 text-slate-300">Vice President, Student Fellowship</span>
                     <span className="px-2 py-0.5 rounded bg-[#090D16] border border-amber-500/20 text-slate-300">400+ Members</span>
                     <span className="px-2 py-0.5 rounded bg-[#090D16] border border-amber-500/20 text-slate-300">Award of Excellence</span>
                     <span className="px-2 py-0.5 rounded bg-[#090D16] border border-amber-500/20 text-slate-300">Stewardship</span>

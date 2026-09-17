@@ -79,7 +79,7 @@ export default function LeadershipFooter() {
             &copy; {new Date().getFullYear()} Babawale Victor Ayomide. All rights reserved.
           </div>
           <div className="flex items-center gap-2 text-slate-400">
-            <span>Christ Apostolic Church Students Association // University of Ilorin</span>
+            <span>Student Fellowship // University of Ilorin</span>
           </div>
         </div>
       </div>

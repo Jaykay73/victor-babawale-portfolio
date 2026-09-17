@@ -260,9 +260,9 @@ export const EXPERIENCE_PROGRESSION: WorkExperience[] = [
 
 export const LEADERSHIP: LeadershipRole[] = [
   {
-    id: "cacsa-vp",
+    id: "sf-vp",
     role: "Vice President",
-    organization: "Christ Apostolic Church Students Association",
+    organization: "Student Fellowship",
     institution: "University of Ilorin, Nigeria",
     period: "2025 – 2026",
     communitySize: "400+ Student Members",
@@ -276,9 +276,9 @@ export const LEADERSHIP: LeadershipRole[] = [
     ],
   },
   {
-    id: "cacsa-programs",
+    id: "sf-programs",
     role: "Programs Coordinator",
-    organization: "Christ Apostolic Church Students Association",
+    organization: "Student Fellowship",
     institution: "University of Ilorin, Nigeria",
     period: "2023 – 2025",
     communitySize: "400+ Student Members",
@@ -297,7 +297,7 @@ export const AWARDS: AwardItem[] = [
   {
     id: "most-influential",
     title: "Most Influential Award",
-    issuer: "CACSA UNILORIN Final Year Brethren",
+    issuer: "Student Fellowship UNILORIN Final Year Brethren",
     category: "Leadership & Community Impact",
     citation:
       "Award of Recognition presented in recognition of exceptional influence, exemplary leadership, and unwavering commitment to inspiring positive change and making a lasting impact within the community.",
@@ -306,7 +306,7 @@ export const AWARDS: AwardItem[] = [
   {
     id: "leadership-excellence",
     title: "Leadership Excellence Award",
-    issuer: "CACSA UNILORIN Final Year Brethren",
+    issuer: "Student Fellowship UNILORIN Final Year Brethren",
     category: "Executive Governance",
     citation:
       "Award of Recognition for Leadership Excellence in recognition of exceptional leadership, unwavering dedication to service, and remarkable ability to inspire, guide, and positively influence others through exemplary character and commitment to excellence.",
@@ -315,7 +315,7 @@ export const AWARDS: AwardItem[] = [
   {
     id: "certificate-of-service",
     title: "Certificate of Service",
-    issuer: "CACSA UNILORIN, PS Chapter",
+    issuer: "Student Fellowship UNILORIN, PS Chapter",
     category: "Institutional Service",
     citation:
       "Presented in recognition of faithful service, dedication, and commitment to student welfare, organizational governance, and community coordination.",

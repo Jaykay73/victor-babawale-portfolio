@@ -35,7 +35,7 @@ export default function LeadershipHero() {
 
             {/* Role & Summary */}
             <p className="text-lg sm:text-xl text-slate-300 font-sans leading-relaxed max-w-2xl">
-              I am <strong className="text-slate-100">Babawale Victor Ayomide</strong>—an executive student leader, former <strong className="text-amber-400">Vice President</strong> and <strong className="text-amber-400">Programs Coordinator</strong> of the Christ Apostolic Church Students Association (CACSA), University of Ilorin.
+              I am <strong className="text-slate-100">Babawale Victor Ayomide</strong>—an executive student leader, former <strong className="text-amber-400">Vice President</strong> and <strong className="text-amber-400">Programs Coordinator</strong> of the Student Fellowship, University of Ilorin.
             </p>
 
             <p className="text-sm sm:text-base text-slate-400 leading-relaxed max-w-2xl font-sans">
@@ -99,7 +99,7 @@ export default function LeadershipHero() {
                   Babawale Victor Ayomide
                 </div>
                 <div className="text-slate-400 text-[11px] font-sans">
-                  Vice President &amp; Executive Council Member, CACSA
+                  Vice President &amp; Executive Council Member, Student Fellowship
                 </div>
               </div>
             </div>

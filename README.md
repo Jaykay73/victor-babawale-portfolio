@@ -89,7 +89,7 @@ npm run start
    - Grounded biographical narrative paired with outdoor portrait.
 
 9. **Leadership & Stewardship (`src/components/LeadershipSection.tsx`)**:
-   - Vice President & Programs Coordinator of CACSA Unilorin (400+ students).
+   - Vice President & Programs Coordinator of Student Fellowship Unilorin (400+ students).
    - Interactive modal lightbox displaying verified awards and certificates of service.
 
 10. **Editorial Moment (`src/components/EditorialMoment.tsx`)**:
